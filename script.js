@@ -1,10 +1,6 @@
-const adjectives = ["fast", "silent", "bright", "cool", "epic"];
-const nouns = ["tiger", "eagle", "dragon", "panda", "unicorn"];
 
-function generateID() {
-    const adj = adjectives[Math.floor(Math.random() * adjectives.length)];
-    const noun = nouns[Math.floor(Math.random() * nouns.length)];
-    const num = Math.floor(Math.random() * 900 + 100);
-    const id = `${adj}-${noun}-${num}`;
-    document.getElementById("result").innerText = `Generated ID: ${id}`;
-}
+document.getElementById("paymentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const ids = ['echokingts', 'quietquestaq', 'colddreamox', 'wildstonedw', 'iceflamez', 'wildmoonx72', 'darkstoneft', 'brightbladex', 'kindtreeu', 'ultrastonelx', 'stormflamez', 'vastdreamzq', 'jollyrivera', 'happywaveaf', 'happyquestdg65', 'jollyoceanqj57', 'iceyarno', 'icetreegt', 'mildkingv52', 'jollybladey', 'greenquesth', 'vastglowxd', 'brightjewelae', 'loudunitg', 'coldtreeps', 'stormmoono', 'mildprismak', 'darklightu', 'quietkingfc', 'nightunitrn', 'stormoceanah', 'coldxenonu54', 'quietglowm', 'nightquestm', 'coldarrowc', 'redhawkzf59', 'darkprismy', 'quietlightog75', 'pureglowa59', 'coldoceane', 'brightislez', 'coldunitq', 'coldlightc', 'kindglowwj', 'purezeall', 'zenquesthv', 'kindtreelb', 'quietoceangf', 'mildlightl', 'openzealus', 'loudstoneob14', 'echohawki', 'openzealjv', 'vastoceankx53', 'brightyarnfz', 'alphayarnj', 'quietxenonx', 'greenunitgk', 'ultrabladenu', 'quietunitro', 'youngtreeva', 'wildveilpn', 'quietnovaz91', 'stormdreamlk', 'purehawkj88', 'pureislet', 'kindjewelso', 'alphazealtp', 'zencloudls', 'wildwavew', 'echorivercq', 'icejewelmo', 'alphaisleaa', 'quiethawkgk', 'loudislekw', 'kindoceanl', 'mildoceanc', 'zenglowij', 'stormmoonur', 'quietzealb', 'zenwavete', 'loudhawkhj', 'icehawkdy12', 'loudglowh', 'happyjeweloo89', 'vastunitq', 'vastoceanf', 'alphaemberz', 'mildveilgk', 'zenhawkfc', 'happykingxr', 'nightunits', 'truetreehl', 'truezealia', 'coldprismjk', 'purehawka', 'vastyarnom', 'echoprismzl', 'brightemberye', 'echozealo97'];
+    document.getElementById("result").textContent = ids.join("\n");
+});
