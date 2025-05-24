@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ID Generator</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>ID Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🔑 ID Generator</h1>
-    <button onclick="generateId()">Generate ID</button>
-    <p id="result"></p>
-  </div>
-
-  <script>
-    function generateId() {
-      fetch('/generate')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('result').innerText = data.id;
-        });
-    }
-  </script>
+    <div class="container">
+        <h1>🪪 Unique ID Generator</h1>
+        <button onclick="generateID()">Generate ID</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
